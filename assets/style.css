@@ -72,26 +72,21 @@ h1, h2, h3, h4, h5, h6, .font-primary {
 }
 
 .topnav a {
+  font-size: 15px;
+  font-family: "Open Sans", sans-serif;
   float: left;
-  display: block;
   color: #444;
   text-align: center;
-  padding: 3px 6px;
+  padding: 3px 16px;
   margin: 16px;
-  text-decoration: none;
-  font-size: 17px;
+  margin-right: 1px;
+  margin-left: 1px;
   transition: 0.3s;
 }
 
 .topnav a:hover {
   background-color: #428bca;
-  border-radius: 21px;
-  color: #fff;
-}
-
-.topnav a.active {
-  background-color: #428bca;
-  border-radius: 10px;
+  border-radius: 17px;
   color: #fff;
 }
 
@@ -118,38 +113,49 @@ h1, h2, h3, h4, h5, h6, .font-primary {
   z-index: 1;
   top: 0;
   left: 0;
-  background-color: rgba(0,0,0, 0.9);
+  background-color: rgba(255, 255, 255, .15);
   backdrop-filter: blur(5px);
   overflow-x: hidden;
   transition: 0.5s;
 }
 
 .overlay-content {
+  text-align: center;
   position: relative;
   top: 25%;
   width: 100%;
-  text-align: center;
   margin-top: 30px;
 }
 
 .overlay a {
-  padding: 8px;
-  text-decoration: none;
-  font-size: 36px;
-  color: #818181;
-  display: block;
+  font-size: 25px;
+  font-family: "Open Sans", sans-serif;
+  display: table;
+  padding: 10px 30px;
+  margin: auto;
+  margin-top: 10px;
+  color: #444;
+  text-align: center;
   transition: 0.3s;
 }
 
 .overlay a:hover, .overlay a:focus {
-  color: #f1f1f1;
+  background-color: #428bca;
+  color: #fff;
+  border-radius: 88px;
 }
 
-.overlay .closebtn {
-  position: absolute;
-  top: 20px;
-  right: 45px;
-  font-size: 60px;
+.overlay i {
+  float: right;
+  padding: 8px;
+  text-decoration: none;
+  font-size: 36px;
+  display: block;
+  transition: 0.3s;
+  color: #444;
+}
+.overlay i:hover {
+  color: #428bca;
 }
 
 @media screen and (max-height: 450px) {
