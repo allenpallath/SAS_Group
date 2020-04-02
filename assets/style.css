@@ -66,24 +66,28 @@ h1, h2, h3, h4, h5, h6, .font-primary {
 /*--------------------------------------------------------------
 # Navigation Menu Large screen
 --------------------------------------------------------------*/
-.logo{
+nav{
+  background-color: #fff;
+  width: inherit;
+}
+nav .logo{
   font-size: 28px;
   margin: 0;
   padding: 10px 0;
-  line-height: 1;
   font-weight: 400;
   letter-spacing: 3px;
   text-transform: uppercase;
   color: #1c5c93;
-  text-decoration: none;
+  background-color: #fff;
 }
-.topnav {
+
+.nav_menu {
   overflow: hidden;
   background-color: #fff;
 
 }
 
-.topnav a {
+.nav_menu a {
   font-size: 17px;
   font-family: "Open Sans", sans-serif;
   float: left;
@@ -95,13 +99,13 @@ h1, h2, h3, h4, h5, h6, .font-primary {
   transition: 0.3s;
 
 }
-.topnav a.active {
+.nav_menu a.active {
   background-color: #428bca;
   color: #fff;
   border-radius: 17px;
 }
 
-.topnav a:hover {
+.nav_menu a:hover {
   background-color: #428bca;
   border-radius: 17px;
   color: #fff;
