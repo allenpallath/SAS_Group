@@ -10,3 +10,7 @@ function closeNav() {
  document.getElementById("myNav").style.width = "0%";
  document.getElementById("nav_btn").style.visibility = 'visible';
 }
+
+$('.carousel').carousel({
+  interval: 2000
+})
