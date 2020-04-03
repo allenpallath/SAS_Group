@@ -69,16 +69,19 @@ h1, h2, h3, h4, h5, h6, .font-primary {
 nav{
   background-color: #fff;
   width: inherit;
+  border-bottom: 1px solid #eee;
 }
-nav .logo{
+
+nav .logo a{
+  float: left;
   font-size: 28px;
-  margin: 0;
-  padding: 10px 0;
+  line-height: 1;
   font-weight: 400;
   letter-spacing: 3px;
   text-transform: uppercase;
-  color: #1c5c93;
-  background-color: #fff;
+  margin: 0px 35px;
+
+
 }
 
 .nav_menu {
@@ -94,7 +97,6 @@ nav .logo{
   color: #444;
   text-align: center;
   padding: 4px 16px;
-  margin: 16px;
   margin: 10px 1px;
   transition: 0.3s;
 
