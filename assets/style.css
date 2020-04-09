@@ -102,11 +102,6 @@ nav .logo a{
   transition: 0.3s;
 
 }
-.nav_menu a.active {
-  background-color: #428bca;
-  color: #fff;
-  border-radius: 17px;
-}
 
 .nav_menu a:hover {
   background-color: #428bca;
@@ -140,7 +135,7 @@ nav .logo a{
   background-color: #f8f9fa9e;
   backdrop-filter: blur(5px);
   overflow-x: hidden;
-  transition: 0.5s;
+  transition: 0.2s;
 }
 
 .overlay-content {
