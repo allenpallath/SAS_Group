@@ -334,3 +334,28 @@ nav .logo a{
     width: 5%;
   }
 }
+
+/*--------------------------------------------------------------
+# Cards Section
+--------------------------------------------------------------*/
+.cards{
+  margin: auto;
+}
+.cards i{
+  color: #428bcd;
+  padding: 10px;
+  font-size: 55px;
+}
+.cards h1{
+  font-size: 32px;
+  font-weight: 600;
+  margin: 20px;
+  color: #5c768d;
+}
+.card-title{
+  font-weight: 600;
+  margin-bottom: 15px;
+  font-size: 18px;
+  position: relative;
+  padding-bottom: 15px;
+}
