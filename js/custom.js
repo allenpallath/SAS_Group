@@ -65,17 +65,15 @@
       });
     });  
 
-    document.getElementById("home").style.backgroundImage="https://github.com/allenpallath/SAS_Group/blob/master/images/home1.jpg";
+    document.getElementById("home").style.backgroundImage="url(../images/home1.jpg)";
 
-    var image = ["https://github.com/allenpallath/SAS_Group/blob/master/images/home1.jpg",
-    "https://github.com/allenpallath/SAS_Group/blob/master/images/home2.jpg",
-    "https://github.com/allenpallath/SAS_Group/blob/master/images/home3.jpg"];
+    var image = ["url(../images/home1.jpg)","url(../images/home2.jpg)","url(../images/home3.jpg)"];
     var i = 0;
     setInterval(function(){
       if(i>3){
         i = 0;
       }
-      document.getElementById("home").style.backgroundImage=image[i];
+      else document.getElementById("home").style.backgroundImage=image[i];
       i++;
     },10000);
 
