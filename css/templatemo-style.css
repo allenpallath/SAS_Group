@@ -340,12 +340,8 @@
       background:url('../images/home1.jpg');
     background-size:cover
     }
-    35% {
+    50% {
       background:url('../images/home2.jpg');
-    background-size:cover
-    }
-    70% {
-      background:url('../images/home3.jpg');
     background-size:cover
     }
     100% {
