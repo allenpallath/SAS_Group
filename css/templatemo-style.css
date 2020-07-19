@@ -79,7 +79,7 @@
   }
 
   a:hover, a:active, a:focus {
-    color: #ce3232;
+    color: #428bca;
     outline: none;
   }
 
@@ -101,7 +101,7 @@
   }
 
   .section-btn {
-    background: #ce3232;
+    background: #428bca;
     border: 0;
     border-radius: 100px;
     color: #ffffff;
@@ -115,13 +115,13 @@
 
   .section-btn:hover,
   .section-btn:focus {
-    background: #0575E6;
+    background: #428bca;
     border-color: transparent;
     color: #393939;
   }
 
   .overlay {
-    background: #0575E6;
+    background: #428bca;
     opacity: 0.7;
     position: absolute;
     width: 100%;
@@ -158,7 +158,7 @@
 
   .spinner {
     border: 1px solid transparent;
-    border-radius: 3px;
+    border-radius: 5px;
     position: relative;
   }
 
@@ -173,7 +173,7 @@
     margin-top: -10px;
     margin-left: -10px;
     border-radius: 50%;
-    border: 1px solid #0575E6;
+    border: 1px solid #428bca;
     border-top-color: #ffffff;
     animation: spinner .9s linear infinite;
   }
@@ -340,8 +340,12 @@
       background:url('../images/home1.jpg');
     background-size:cover
     }
-    50% {
+    35% {
       background:url('../images/home2.jpg');
+    background-size:cover
+    }
+    70% {
+      background:url('../images/home3.jpg');
     background-size:cover
     }
     100% {
@@ -362,7 +366,7 @@
 
   .home-info .section-btn:hover,
   .home-info .section-btn:focus {
-    background: #ce3232;
+    background: #428bca;
     border-color: transparent;
     color: #ffffff;
   }
@@ -420,80 +424,6 @@
     box-shadow: none;
   }
 
-
-
-  /*---------------------------------------
-      WORK             
-  -----------------------------------------*/
-
-  .work-info img {
-    width: 100%;
-    border-radius: 100%;
-  }
-
-  #work .work-thumb {
-    overflow: hidden;
-    position: relative;
-    cursor: pointer;
-    border-radius: 3px;
-  }
-
-  .work-thumb .work-info {
-    position: absolute;
-    top: 0px;
-    left: 0px;
-    right: 0px;
-    bottom: 0px;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    flex-direction: column;
-    text-align: center;
-  }
-
-  .work-thumb .work-info:after {
-    position: absolute;
-    top: 0px;
-    left: 0px;
-    right: 0px;
-    bottom: 0px;
-    content: "";
-    background: #0575E6;  /* fallback for old browsers */
-    background: -webkit-linear-gradient(to right, #0575E6, #00F260);  /* Chrome 10-25, Safari 5.1-6 */
-    background: linear-gradient(to right, #0575E6, #00F260); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
-    opacity: 0;
-    transition: 0.5s;
-  }
-
-  .work-thumb .work-info:hover::after {
-    opacity: 0.9;
-  }
-
-  .work-thumb .work-info h3,
-  .work-thumb .work-info small {
-    transform: translateY(100%);
-    opacity: 0;
-    display: block;
-    transition: 0.5s 0.2s;
-    color: #ffffff;
-    z-index: 2;
-    position: relative;
-  }
-
-  .work-thumb .work-info small {
-    color: #d9d9d9;
-    text-transform: uppercase;
-    font-size: 12px;
-    font-weight: 500;
-    letter-spacing: 1px;
-    margin-top: 3px;
-  }
-
-  .work-thumb:hover .work-info h3,
-  .work-thumb:hover .work-info small {
-    transform: translateY(0px);
-    opacity: 1;
-  }
 
   /*---------------------------------------
      FOOTER              
@@ -586,116 +516,8 @@
   }
 
   .social-icon li a:hover {
-    color: #ce3232;
+    color: #428bca;
   }
-
-
-  /*---------------------------------------
-      MODAL FORM             
-  -----------------------------------------*/
-
-  @media (min-width: 992px) {
-    .modal-dialog {
-      width: 420px;
-    }
-  }
-
-  .modal-open .modal {
-    padding-left: 0 !important;
-  }
-
-  .modal-dialog .modal-content {
-    background: #000000;  /* fallback for old browsers */
-    background: -webkit-linear-gradient(to right, #434343, #000000);  /* Chrome 10-25, Safari 5.1-6 */
-    background: linear-gradient(to right, #434343, #000000); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
-    border: none;
-    border-radius: 2px;
-    text-align: center;
-    position: relative;
-    padding: 2em;
-  }
-
-  .modal-header, .modal-footer {
-    border-bottom: 0;
-    padding: 0;
-  }
-
-  .modal-dialog .modal-body {
-    padding: 0;
-  }
-
-  .modal-dialog .modal-body a {
-    color: #d9d9d9;
-  }
-
-  .modal .close {
-    color: #999;
-    font-size: 40px;
-    font-weight: 300;
-    text-shadow: none;
-    opacity: 1;
-    position: absolute;
-    top: 15px;
-    right: 15px;
-    z-index: 100;
-    outline: none;
-  }
-
-  .modal-dialog .modal-title {
-    margin-bottom: 20px;
-  }
-
-  .modal-dialog .modal-title h2 {
-    color: #ffffff;
-  }
-
-  .modal-dialog .nav-tabs {
-    display: inline-block;
-  }
-
-  .modal-dialog .nav-tabs > li > a {
-    border: 0;
-    color: #999999;
-    margin-right: 0;
-  }
-
-  .modal-dialog .nav-tabs > li.active > a, 
-  .modal-dialog .nav-tabs > li.active > a:hover, 
-  .modal-dialog .nav-tabs > li.active > a:focus,
-  .modal-dialog .nav>li>a:focus, 
-  .modal-dialog .nav>li>a:hover {
-    color: #ffffff;
-    background-color: transparent;
-    border: none;
-    border-bottom: 1px solid #ce3232;
-  }
-
-  .modal-dialog .tab-content {
-    padding-top: 20px;
-  }
-
-  .modal-dialog form .form-control {
-    border-radius: 5px;
-    border: 1px solid #595959;
-    background: transparent;
-    box-shadow: none;
-    margin: 15px 0 15px 0;
-    height: 50px;
-  }
-
-  .modal-dialog form .form-control:hover,
-  .modal-dialog form .form-control:focus {
-    border-color: #ffffff;
-  }
-
-  .modal-dialog form input[type="submit"] {
-    background: #ce3232;
-    border-color: transparent;
-    border-radius: 100px;
-    color: #ffffff;
-    margin-top: 20px;
-  }
-
 
   /*---------------------------------------
      RESPONSIVE STYLES              
