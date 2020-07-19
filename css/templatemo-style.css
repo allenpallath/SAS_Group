@@ -178,7 +178,7 @@
     animation: spinner .9s linear infinite;
   }
 
-  @-webkit-@keyframes spinner {
+  @-webkit-keyframes spinner {
     to {transform: rotate(360deg);}
   }
 
@@ -314,10 +314,7 @@
   -----------------------------------------*/
 
   #home {
-    /* background: url('../images/home3.jpg') no-repeat center center;  */
-    background-size: cover;
     vertical-align: middle;
-    transition: all 0.2s ease-in-out;
     display: -webkit-box;
     display: -webkit-flex;
     display: -ms-flexbox;
