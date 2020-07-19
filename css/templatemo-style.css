@@ -335,11 +335,11 @@
     overflow: hidden;
     padding-top: 10em;
     text-align: left;
-    background:url('../images/home1.jpg');
-    animation: chbg 15s infinite alternate;
-    background-size:cover
+    /* background:url('../images/home1.jpg'); */
+    /* animation: chbg 15s infinite alternate; */
+    /* background-size:cover */
   }
-  @keyframes chbg {
+  /* @keyframes chbg {
     0% {
       background:url('../images/home1.jpg');
     background-size:cover
@@ -352,7 +352,7 @@
       background:url('../images/home3.jpg');
     background-size:cover
     }
-  }
+  } */
 
   #home h1 {
     color: #ffffff;
