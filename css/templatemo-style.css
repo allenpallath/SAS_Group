@@ -254,6 +254,7 @@
     color: rgba(0, 0, 0, 0.8);
     background: rgb(0, 0, 0);
     padding: 15px 40px;
+    font-size: 20px;
     transition: all 0.2s ease-in-out;
   }
 
@@ -320,6 +321,7 @@
     /* background: url('../images/home3.jpg') no-repeat center center;  */
     background-size: cover;
     vertical-align: middle;
+    transition: all 0.2s ease-in-out;
     display: -webkit-box;
     display: -webkit-flex;
     display: -ms-flexbox;
@@ -333,6 +335,23 @@
     overflow: hidden;
     padding-top: 10em;
     text-align: left;
+    background:url('../images/home1.jpg');
+    animation: chbg 15s infinite alternate;
+    background-size:cover
+  }
+  @keyframes chbg {
+    0% {
+      background:url('../images/home1.jpg');
+    background-size:cover
+    }
+    50% {
+      background:url('../images/home2.jpg');
+    background-size:cover
+    }
+    100% {
+      background:url('../images/home3.jpg');
+    background-size:cover
+    }
   }
 
   #home h1 {

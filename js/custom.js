@@ -64,18 +64,5 @@
             event.preventDefault();
       });
     });  
-
-    document.getElementById("home").style.backgroundImage="url(../images/home2.jpg)";
-
-    var image = ["url(../images/home1.jpg)","url(../images/home2.jpg)","url(../images/home3.jpg)"];
-    var i = 0;
-    setInterval(function(){
-      if(i>2){
-        i = 0;
-      }
-      document.getElementById("home").style.backgroundImage=image[i];
-      i++;
-    },10000);
-
     
 })(jQuery);
